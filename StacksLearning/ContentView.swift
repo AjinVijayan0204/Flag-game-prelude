@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    
     var body: some View {
         
         //vstack, hstack, zstack
@@ -61,8 +63,47 @@ struct ContentView: View {
         
         VStack{
             
+            /*
+            //MARK: - Normal buttons
+            Button("Delete") {
+                excuteDelete()
+            }
+            
+            Button("Delete",role: .destructive) {
+                excuteDelete()
+            }
+            .buttonStyle(.bordered)
+            .tint(.mint)
+            
+            Button("Delete",role: .destructive) {
+                excuteDelete()
+            }
+            .buttonStyle(.borderedProminent)
+             
+             */
+            
+            
+            //MARK: - Custom button
+            
+            Button{
+                print("Clicked")
+            }label: {
+                Image(systemName: "pencil")
+                Text("Edit")
+            }
+            .buttonStyle(.bordered)
+            
+            Button{
+                print("Clicked")
+            }label: {
+                Label("Edit", systemImage: "pencil")
+            }
+            .buttonStyle(.bordered)
         }
             
+    }
+    fileprivate func excuteDelete() {
+        print("Deleting")
     }
 }
 
