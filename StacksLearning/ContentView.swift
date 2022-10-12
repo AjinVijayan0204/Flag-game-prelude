@@ -9,8 +9,38 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        
+        //vstack, hstack, zstack
+        
+        /*
+        //MARK: - adding color above and as background
+        ZStack {
+            //color as a view
+            Color.red
+                .frame(width: 150.0, height: 100.0, alignment: .bottomLeading)
+            Text("Hello, world!")
+        }
+//        .background(.red)
+         
+         */
+        
+        /*
+        //MARK: - Glass effect and stack
+        ZStack{
+            VStack(spacing: 0) {
+                Color.red
+                Color.blue
+            }
+            Text("Data")
+                .foregroundColor(.secondary)
+                .padding(50)
+                .background(.ultraThinMaterial)
+        }
+        .ignoresSafeArea()
+         
+         */
+        
+            
     }
 }
 
