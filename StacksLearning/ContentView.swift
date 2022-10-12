@@ -40,6 +40,28 @@ struct ContentView: View {
          
          */
         
+        /*
+        
+        //MARK: - Gradients
+        
+        VStack{
+            //Linear gradient
+            LinearGradient(gradient: Gradient(colors: [.red,.blue]), startPoint: .top, endPoint: .bottom)
+            
+            //Radial Gradient
+            
+            RadialGradient(colors: [.cyan,.gray], center: .center, startRadius: 50, endRadius: 180)
+            
+            //Angular gradient
+            
+            AngularGradient(gradient: Gradient(colors: [.blue,.red]), center: .center, angle: Angle.degrees(1))
+        }
+        
+        */
+        
+        VStack{
+            
+        }
             
     }
 }
